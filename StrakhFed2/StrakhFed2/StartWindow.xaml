@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:StrakhFed2"
         mc:Ignorable="d"
         Title="Типа регистрация" 
-        Height="450" 
+        Height="500" 
         Width="800"
         WindowStartupLocation="CenterScreen">
     <Grid>
@@ -63,6 +63,18 @@
                     Background="CadetBlue"
                     Foreground="White"
                     Click="btnEnter_Click"/>
+
+            <Button x:Name="btnList"
+                    Height="30"
+                    Width="200"
+                    Margin="0 20 0 0"
+                    Content="Все пользователи"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Background="CadetBlue"
+                    Foreground="White"
+                    Click="btnList_Click"/>
+
         </StackPanel>
     </Grid>
 </Window>

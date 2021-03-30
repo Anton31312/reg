@@ -13,3 +13,5 @@ C:\Users\WSR\source\repos\StrakhFed2\StrakhFed2\obj\Debug\StrakhFed2.exe
 C:\Users\WSR\source\repos\StrakhFed2\StrakhFed2\obj\Debug\StrakhFed2.pdb
 C:\Users\WSR\source\repos\StrakhFed2\StrakhFed2\obj\Debug\StartWindow.g.cs
 C:\Users\WSR\source\repos\StrakhFed2\StrakhFed2\obj\Debug\StartWindow.baml
+C:\Users\WSR\source\repos\StrakhFed2\StrakhFed2\obj\Debug\SecondWindow.g.cs
+C:\Users\WSR\source\repos\StrakhFed2\StrakhFed2\obj\Debug\SecondWindow.baml

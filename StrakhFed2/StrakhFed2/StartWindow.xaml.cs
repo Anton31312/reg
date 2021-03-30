@@ -30,13 +30,25 @@ namespace StrakhFed2
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"Фамилия: {tbLastName.Text} Имя: {tbFirstName.Text} Возраст: {tbAge.Text}");
+            if (tbLastName.Text != null && tbLastName.Text != " ")
+            {
+                if (tbFirstName.Text != null && tbFirstName.Text != " ")
+                {
+                    if (tbAge.Text != null && tbAge.Text != " ")
+                    {
+                        MessageBox.Show($"Фамилия: {tbLastName.Text} Имя: {tbFirstName.Text} Возраст: {tbAge.Text}");
 
-            StreamWriter streamWriter = new StreamWriter(path);
-            streamWriter.Write(tbLastName.Text);
-            streamWriter.Write(tbFirstName.Text);
-            streamWriter.Write(tbAge.Text);
-            streamWriter.Close();
+                        StreamWriter streamWriter = new StreamWriter(path, true);
+                        streamWriter.WriteLine(tbLastName.Text + " " + tbFirstName.Text + " " + tbAge.Text);
+                        streamWriter.Close();
+                    }
+                }
+            }
+
+            else
+            {
+                MessageBox.Show("Введите данные без пробелов");
+            }
             
         }
 
@@ -65,6 +77,16 @@ namespace StrakhFed2
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnList_Click(object sender, RoutedEventArgs e)
+        {
+            string[] vs = new string[3];
+            StreamReader streamReader = new StreamReader(path);
+
+
+            SecondWindow secondWindow = new SecondWindow();
+            secondWindow.ShowDialog();
         }
     }
 }
